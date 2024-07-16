@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>ak3.com</title>
+    <style>body {padding: 50px 50px;}
+        input{color:blue;}
+        td{color:aqua;}
+        h1{color:aquamarine;
+    }
+    div{color:blueviolet;}
+    </style>
+    <script>
+        function v(){
+var un,pwd,cpwd;
+
+
+//cpwd=document.getElementById('c').innerHTML=cpwd;
+/*un=document.;
+pwd=document.f.pwd.value;cpwd=document.f.cpwd.value;//un=document.f.un.value;*/
+if(un==""||pwd==""||cpwd=="")
+{
+    alert("plz fill all");
+    document.getElementById('p').innerHTML="p";
+}
+else if(un.length<8)
+{
+    alert("error uname 8char only");
+    document.getElementById('d').innerHTML="d";
+}
+else if(pwd.length<6)
+{
+    alert("error pwd 6 char only");
+    document.getElementById('i').innerHTML="i";
+}
+else if(pwd!=cpwd)
+{
+    alert("error not match!!!");
+    document.getElementById('c').innerHTML="c";
+}
+else
+{
+    alert("success!!!!!!!!!!!")
+}
+
+}
+    </script>
+    
+    </head>
+    <body  bgcolor="black">
+        <form name="f">
+        <table align="center">
+        <th><h1>userloging</h1></th>
+        <tr><td>username</td>
+        <td><input type="text" name="un"/> <div id="d"></div></td><td></td>
+    </tr>
+    <tr><td>pass:</td>
+    <td><input type="password" name="pwd"/>
+        <div id="i"></div></td>
+</tr>
+<tr><td>c pass:</td>
+    <td><input type="password" name="cpwd"/> <div id="c"></div></td>
+</tr>
+<tr>
+    <td colspan="2" align="center"><input type="button" size="190" name="s" value="submit" onclick="document.getElementById('p').innerHTML=v()" ></input>
+    <div id="p"></div></td>
+</tr>
+    </table></form>
+    </body>
+    </html>
